@@ -1,0 +1,23 @@
+#include "..\\src\\text.as"
+
+onClick gosub *move
+
+newmod text1, TruffleText, 50, 50, "hommo"
+
+newmod text2, TruffleText, 50, 70, "tasso"
+
+while 1
+	redraw 0
+	color 255,255,255
+	boxf
+	color 0,0,0
+	update text1
+	update text2
+	redraw 1
+	await 20
+wend
+
+*move
+	setX text2, mousex
+	setY text2, mousey
+return
