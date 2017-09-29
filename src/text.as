@@ -1,4 +1,4 @@
-#module TruffleText gui
+#module TruffleText x, y, to_x, to_y, text, smooth
 
     #modinit int a, int b, str c
     	to_x = a
